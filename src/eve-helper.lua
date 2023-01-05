@@ -236,10 +236,6 @@ local initHelper = function()
                             local rapperIsActive = EveHelper.utils.general.isRegionColorMatch(v.details.activeCheck, EveHelper.config.const.ActionBarActiveColors);
                             local r, g, b = getColor(EveHelper.config.const.regions.noImages.actionButtons.but8.activeCheck);
                             EveHelper.utils.general.logMessage('Is Rapper {'..v.slot..'} active: '..tostring(rapperIsActive)..'\n colors: '..tostring(r)..' | '..tostring(g)..' | '..tostring(b)..'\n Cords: '..tostring(v.details.activeCheck:getX())..' | '..tostring(v.details.activeCheck:getY())..' | '..tostring(v.details.activeCheck:getW())..' | '..tostring(v.details.activeCheck:getH()), 5);
-
-                            EveHelper.config.const.regions.noImages.actionButtons.but8.activeCheck:highlight(nil, 3)
-                            --v.details.reg:saveColor(v.slot..'.png');
-                            --EveHelper.utils.general.logMessage(v.slot..'.png saved!', 3);
                             if (not rapperIsActive) then
                                 EveHelper.utils.general.randomClickInRegionCircle(v.details.reg, 5);
                             end

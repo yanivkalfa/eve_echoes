@@ -1,0 +1,11 @@
+local dir = scriptPath();
+local setGeneralUtils = loadfile(dir .. 'utils/general.utils.lua');
+local setSettingsUtils = loadfile(dir .. 'utils/settings.utils.lua');
+local setScannersUtils = loadfile(dir .. 'utils/scanners.utils.lua');
+--local setGeneralUtils = loadfile(dir .. "utils/general.utils.lua");
+--local setGeneralUtils = loadfile(dir .. "utils/general.utils.lua");
+--local setGeneralUtils = loadfile(dir .. "utils/general.utils.lua");
+--local setGeneralUtils = loadfile(dir .. "utils/general.utils.lua");
+setGeneralUtils();
+setSettingsUtils();
+setScannersUtils();
